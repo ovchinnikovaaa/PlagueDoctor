@@ -1,0 +1,228 @@
+BODY{
+    background: #FFFFFF;
+    margin: 0;
+    padding: 0; /*White*/
+    font-size: 20px ;
+    font-family: Helvetica, serif;
+}
+
+.top_string{
+    background: #222f3d;
+    padding-top: 1px;
+    margin-bottom: 0;
+}
+
+H2 {
+    color: #FFFFFF;
+    font-size: 70%;
+    font-family: Helvetica, serif;
+    text-align: center;
+    margin-top: 5px;
+}
+H3 {
+    color: #000000;
+    font-size: 40%;
+    font-family: Helvetica, serif;
+    text-align: left;
+    margin-top: 5px;
+}
+.header {
+    background: #4f5a6e; /*цвет хедера -- GhostWhite*/
+    overflow: hidden;
+    padding-top: 0;
+}
+.logo {
+    float: left;
+    padding-top: 30px; /*Отступ сверху*/
+    padding-left: 150px;/*Отступ справа*/
+    vertical-align: top;
+}
+.menu {
+    float: right;
+    padding-top: 60px; /*Отступ сверху*/
+    padding-right: 100px;
+    list-style: none; /*откл. маркеров*/
+    display: block;
+}
+
+.menu li {
+    position: relative;
+    float: left; /* Выстраивание элементов списка в один ряд */
+    margin-right: 0px; /* создание отступов для того, чтобы не сливались пункты меню */
+    font-family: Georgia, serif; /* Указание типа шрифта */
+    font-size: 16px; /* Размер текста в ссылках */
+}
+
+/*стиль для ссылок*/
+.menu li a {
+    display: block; /* Изменение отображения на блочное для того чтобы иметь возможность задать внутренние отступы. */
+    padding: 10px 15px;  /* Внутри блочные отступы. */
+    background: #4f5a6e; /* Цвет блоков меню. */
+    color: #FFFFFF; /* Цвет текста в блоках меню. */
+    text-decoration: none; /* Устранение подчёркивания ссылок. */
+    position: relative; /* Это необходимо при использовании Internet Explorer 6 для того, чтобы ссылка по всей своей площади была «кликабельной». */
+}
+
+/* Изменяем цвет ссылки на #483D8B (DarkSlateBlue) при наведении */
+.menu li a:hover {
+    background: #3a4357; /* Цвет блока при наведении курсора. -- GhostWhite */
+    color: #FFFFFF;  /* Цвет текста при наведении курсора. */
+}
+/*.submenu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 0;
+}
+
+.submenu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.submenu a:hover {background-color: #ddd;}
+.menu:hover .submenu {display: block;}
+.menu:hover .catalog {background-color: #3e8e41;}*/
+ul {
+    /* Убираю маркеры у списка*/
+    list-style: none;
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю отступы. */
+    margin:0px;
+    /* Убираю еще отступы! */
+    padding:0px;
+}
+ul.submenu {
+    position: absolute;
+    width: 105px;
+    top: 37px;
+    left:0px;
+    /* Делаю субменю скрытыми. */
+    display: none;
+    /* Цвет — белый. */
+    background-color: #3a4357;
+}
+ul.submenu > li {
+    /* Блочное расположение элементов*/
+    display: block;
+}
+ul.submenu > li > a {
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю форматирование*/
+    text-decoration: none;
+    /* Задаю отступ. */
+    padding: 10px;
+    /* Задаю цвет. */
+    color: #ffffff;
+    /* Еще цвет. */
+    background-color: #4f5a6e;
+}
+ul.submenu > li > a:hover {
+    /* Цвет бэкграунда при наведении. */
+    background-color: #3a4357;
+    /* Задаю подчеркивание*/
+    text-decoration: none;
+}
+ul.menu > li:hover > ul.submenu {
+    /* Делаю элементы блочными. */
+    display: block;
+}
+/*это все для строчки поиска*/
+* {box-sizing: border-box;}
+form {
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+}
+
+#header .smalcart {
+    float: right;
+    height: 55px;
+    padding: 10px 10px 10px 15px;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background: #E6DEEA;
+}
+
+.parent {
+    font-family: Georgia, serif;
+    margin-top: 5%; /* Отступы вокруг элемента */
+    margin-left: 15%;
+    margin-right: 15%;
+    background: #eef1f4; /* Цвет фона */
+    padding: 5px; /* Поля вокруг текста */
+}
+.child {
+    /*border: 3px solid #666; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    margin: 10px; /* Отступы вокруг */
+    font-family: Georgia, serif;
+    font-size: 48px;
+    color: Black;
+}
+.child1 {
+    font-family: Georgia, serif;
+    padding: 10px; /* Поля вокруг текста */
+    margin: 10px; /* Отступы вокруг */
+    font-size: 20px;
+    color: Black;
+}
+.child2 {
+    font-family: Georgia, serif;
+    padding: 0px; /* Поля вокруг текста */
+    margin: 45px; /* Отступы вокруг */
+    font-size: 20px;
+    color: Black;
+}
+.he {
+    border: none; /* Убираем границу */
+    background-color: #eef1f4; /* Цвет линии */
+    color: #eef1f4; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+}
+/* блок для ссылок без подчеркивания */
+.notpodcherk /* у ссылки с классом notpodcherk не будет подчеркивания по умолчанию */
+{
+    font-family: Georgia, serif;
+    text-decoration: none
+}
+
+hr {
+    border: none; /* Убираем границу */
+    background-color: #4f5a6e; /* Цвет линии */
+    color: #4f5a6e; /* Цвет линии для IE6-7 */
+    height: 3px; /* Толщина линии */
+}
+.column1 {
+   display: flex;
+    margin: 20px;
+}
+.prosrachnost {
+    opacity: 0.3;
+}
+.archieve {
+    font-family: Georgia, serif;
+    text-decoration: none
+}
+.cabinet {
+    float: right;
+    margin: 0 0 5px 0;
+}
+.login_check {
+    margin-right: 15px;
+    margin-top: 0;
+    text-align: right;
+}
+.exit {
+    float: right;
+    margin-top: 50px;
+    margin-right: 5px;
+}

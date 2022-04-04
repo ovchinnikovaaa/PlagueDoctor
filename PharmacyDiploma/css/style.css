@@ -1,0 +1,55 @@
+body {
+    font-family: Georgia, serif;
+    font-size: 12px;
+    color: #444;
+}
+
+a {color: #483D8B;
+text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2 {margin-bottom: 15px;}
+
+h1 {font-size: 18px;}
+h2 {font-size: 16px;}
+
+#container {
+    width: 990px;
+    background-color: #da570f;
+    overflow: hidden; /* Set overflow: hidden to clear the floats on #main and #sidebar */
+    padding: 15px;
+}
+
+#main1 {
+    width: 990px;
+    float: left;
+}
+
+#main1 table {
+    font-family: Georgia, serif;
+    width: 990px;
+}
+
+#main1 table th {
+    font-family: Georgia, serif;
+
+    background-color: #94b9ff;
+    color: #000000;
+    text-align: left;
+}
+
+#main table td {
+    font-family: Georgia, serif;
+    padding: 7px;
+
+}
+
+#sidebar {
+    font-family: Georgia, serif;
+    width: 980px;
+    float: left;
+}

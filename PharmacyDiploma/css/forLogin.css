@@ -1,0 +1,116 @@
+.parent1 {
+    display: flex;
+    font-family: Georgia, serif;
+    margin-top: 5%; /* Отступы вокруг элемента */
+    margin-left: 40%;
+    margin-right: 40%;
+    background: #eef1f4; /* Цвет фона */
+    padding: 5px; /* Поля вокруг текста */
+}
+.parent2 {
+    display: flex;
+    font-family: Georgia, serif;
+    margin-top: 5%; /* Отступы вокруг элемента */
+    margin-left: 38%;
+    margin-right: 38%;
+    background: #eef1f4; /* Цвет фона */
+    padding: 5px; /* Поля вокруг текста */
+}
+/* Стиль формы */
+.form {
+    width: 300px; /* Ширина 300 пикселей */
+    padding: 32px; /*  Внутренний отступ 32 пикселей */
+    border-radius: 10px; /* Закруглённую рамку или скруглить углы элемента. */
+    box-shadow: 0 4px 16px #ccc; /* Тень элемента. 0 - смещение Х, 4 - смещение Y, 16 - степень размытия, #ccc - цвет. */
+    font-family: sans-serif; /* Шрифт. */
+    letter-spacing: 1px; /* Расстояние между буквами */
+}
+.form1 {
+    width: 320px; /* Ширина 300 пикселей */
+    padding: 32px; /*  Внутренний отступ 32 пикселей */
+    border-radius: 10px; /* Закруглённую рамку или скруглить углы элемента. */
+    box-shadow: 0 4px 16px #ccc; /* Тень элемента. 0 - смещение Х, 4 - смещение Y, 16 - степень размытия, #ccc - цвет. */
+    font-family: sans-serif; /* Шрифт. */
+    letter-spacing: 1px; /* Расстояние между буквами */
+}
+/* Поправляем заголовок */
+.form_title {
+    font-family: Georgia, serif;
+    text-align: center; /* Текст по центру */
+    margin: 0 0 32px 0; /* Внешний отступ на всех четырех сторонах элемента. */
+    font-weight: normal; /* Насыщенность шрифта, убираем жирность. */
+}
+/* Поправляем кнопочку */
+.form_button {
+    font-family: Georgia, serif;
+    padding: 10px 20px;
+    border: none; /* Без границы блока. */
+    border-radius: 5px; /* Радиус закругления */
+    letter-spacing: 1px;
+    font-size: 16px;
+    color :#FFFFFF ; /* Цвет текста */
+    background-color: #222f3d; /* Цвет фона */
+    outline: none; /*  Внешней границы элемента */
+    cursor: pointer; /* Тип курсора при наведение */
+    transition: 0.3s; /*  transition позволяет делать плавные переходы между двумя значениями какого-либо CSS свойства */
+}
+.form_button1 {
+    font-family: Georgia, serif;
+    padding: 10px 20px;
+    border: none; /* Без границы блока. */
+    border-radius: 5px; /* Радиус закругления */
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-left: 10px;
+    color :#FFFFFF ; /* Цвет текста */
+    background-color: #222f3d; /* Цвет фона */
+    outline: none; /*  Внешней границы элемента */
+    cursor: pointer; /* Тип курсора при наведение */
+    transition: 0.3s; /*  transition позволяет делать плавные переходы между двумя значениями какого-либо CSS свойства */
+}
+/* Стиль бля блоков */
+.form_grup {
+    position: relative; /* Положение элемента устанавливается относительно его исходного места. */
+    margin-bottom: 32px; /* Внешний отступ снизу элемента  */
+}
+.form_grup1 {
+    margin-left: 12px; /* Внешний отступ снизу элемента  */
+}
+/* Стиль поля ввода */
+.form_input {
+    width: 100%;
+    padding: 0 0 10px 0;
+    border: none; /* Без рамки. */
+    border-bottom: 1px solid #222f3d; /* Нижняя рамка 1 пиксель, цвет  #e0e0e0 */
+    background-color: transparent; /* Фон будет прозрачным. */
+    outline: none;
+    transition: 0.3s;
+}
+/* Стиль подсказок */
+.form_label {
+    position: absolute; /*  Абсолютное позиционирование. */
+    top: 0; /* Смещение позиционированного элемента относительно верхнего края */
+    z-index: -1;
+    color: #222f3d; /*  Цвет текска. */
+    transition: 0.3s;
+}
+/* Если кнопка в фокусе и на нее нажимают, то она меняет цвет */
+.form_button:focus,
+.form_button:hover{
+    background-color: rgba(79, 90, 110, 0.7); /* RGBA  Цвет фона и значение прозрачности. */
+}
+.form_button1:focus,
+.form_button1:hover{
+    background-color: rgba(79, 90, 110, 0.7); /* RGBA  Цвет фона и значение прозрачности. */
+}
+/* Когда поле ввода в фокусе , поменяем цвет нижней границы */
+.form_input:focus {
+    border-bottom: 1px solid #222f3d;
+}
+/* Сдвигаем подсказку вверх и меняем чуток */
+.form_input:focus ~ .form_label,
+.form_input:not(:placeholder-shown) ~ .form_label {
+    top: -18px;
+    font-size:12px;
+    color: #222f3d;
+}

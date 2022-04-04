@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+<head>
+
+    <style type="text/css">
+        a{
+            color: blue; /* цвет ссылки синий */
+            font-size:12px; /* размер 12 пикселей */
+        }
+        .notpodcherk /* у ссылки с классом notpodcherk не будет подчеркивания по умолчанию */
+        {
+            text-decoration: none
+        }
+        body {
+            /* Убираю отступы. */
+            margin:0px;
+            /* Убираю еще отступы. */
+            padding:0px;
+            /* Задаю шрифт. */
+            font: 14px 'Verdana';
+        }
+        ul {
+            /* Убираю маркеры у списка*/
+            list-style: none;
+            /* Делаю элементы блочными. */
+            display: block;
+            /* Убираю отступы. */
+            margin:0px;
+            /* Убираю еще отступы! */
+            padding:0px;
+        }
+        ul:after {
+            /* Делаю элементы блочными. */
+            display: block;
+            /* Убираю выравнивание. */
+            float: none;
+            content: ' ';
+            clear: both;
+        }
+        ul.menu > li {
+            /* Задаю выравнивание и позиционирование. */
+            float: left;
+            /* Считаем координаты относительно исходного места*/
+            position: relative;
+        }
+        ul.menu > li > a {
+            /* Делаю элементы блочными: */
+            display: block;
+            /* Задаю белый цвет. */
+            color: #fff;
+            /* Задаю отступ 10px. */
+            padding: 10px;
+            /* Убираю форматирование*/
+            text-decoration: none;
+            /* Задаю цвет. */
+            background-color: #da570f;
+        }
+        ul.menu > li > a:hover {
+            /* Задаю цвет при наведении. */
+            background-color: #eb9316;
+        }
+        ul.submenu {
+            position: absolute;
+            width: 160px;
+            top: 37px;
+            left:0px;
+            /* Делаю субменю скрытыми. */
+            display: none;
+            /* Цвет — белый. */
+            background-color: white;
+        }
+        ul.submenu > li {
+            /* Блочное расположение элементов*/
+            display: block;
+        }
+        ul.submenu > li > a {
+            /* Делаю элементы блочными. */
+            display: block;
+            /* Убираю форматирование*/
+            text-decoration: none;
+            /* Задаю отступ. */
+            padding: 10px;
+            /* Задаю цвет. */
+            color: #ffffff;
+            /* Еще цвет. */
+            background-color: #da570f;
+        }
+        ul.submenu > li > a:hover {
+            /* Цвет бэкграунда при наведении. */
+            background-color: #eb9316;
+            /* Задаю подчеркивание*/
+            text-decoration: underline;
+        }
+        ul.menu > li:hover > ul.submenu {
+            /* Делаю элементы блочными. */
+            display: block;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<a class="notpodcherk" href="error.html">Ссылка без подчеркивания</a>
+
+<ul class="menu">
+    <li><a href=#>Меню №1</a></li>
+    <li><a href=#>Меню №2</a></li>
+    <li><a href=#>Меню №3</a>
+        <ul class="submenu">
+            <li><a href=#>Субменю №3 третьего меню</a></li>
+            <li><a href=#>Субменю №3 третьего меню</a></li>
+            <li><a href=#>Субменю №3 третьего меню</a></li>
+        </ul>
+    </li>
+</ul>
+
+</body>
+
+</html>
